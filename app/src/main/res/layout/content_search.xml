@@ -11,7 +11,7 @@
 
     <EditText
         android:id="@+id/etQuery"
-        android:layout_width="240dp"
+        android:layout_width="232dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -29,7 +29,8 @@
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/btnFilter"
         android:onClick="onArticleSearch"
-        android:text="@string/search" />
+        android:text="@string/search"
+        android:layout_toLeftOf="@+id/btnFilter" />
 
     <GridView
         android:id="@+id/gvResults"
@@ -37,9 +38,9 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/etQuery"
         android:layout_centerHorizontal="true"
-        android:horizontalSpacing="16dp"
-        android:verticalSpacing="16dp"
-        android:padding="16dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:padding="8dp"
         android:scrollbarStyle="outsideOverlay"
         android:numColumns="2" />
 

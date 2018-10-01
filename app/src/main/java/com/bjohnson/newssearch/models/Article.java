@@ -20,14 +20,18 @@ public class Article implements Serializable {
         return thumbnail;
     }
 
+    public String getSnippet() { return snippet; }
+
     String webUrl;
     String headline;
     String thumbnail;
+    String snippet;
 
     public Article(JSONObject jsonObject) {
         try {
             this.webUrl = jsonObject.getString("web_url");
             this.headline = jsonObject.getJSONObject("headline").getString("main");
+            this.snippet = jsonObject.getString("snippet");
 
             JSONArray multimedia = jsonObject.getJSONArray("multimedia");
 

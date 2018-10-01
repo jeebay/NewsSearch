@@ -33,8 +33,10 @@ public class ArticleArrayAdapter extends ArrayAdapter<Article> {
         }
 
         TextView tvTitle = (TextView) convertView.findViewById(R.id.tvTitle);
-
         tvTitle.setText(article.getHeadline());
+
+        TextView tvSnippet = (TextView) convertView.findViewById(R.id.tvSnippet);
+        tvSnippet.setText(article.getSnippet());
 
         String thumbnail = article.getThumbnail();
 
