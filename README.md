@@ -46,7 +46,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://imgur.com/a/WjjlsxY"/>
+[Imgur link](https://imgur.com/a/WjjlsxY) https://imgur.com/a/WjjlsxY
 
 ## Notes
 
