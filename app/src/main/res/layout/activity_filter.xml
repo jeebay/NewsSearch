@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FilterActivity">
+
+    <TextView
+        android:id="@+id/tvFilterTitle"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:text="@string/filter_articles"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdateFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSortLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sort_order"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/tvBeforeDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnyTime" />
+
+    <Spinner
+        android:id="@+id/spinnerSortOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:entries="@array/sort_order_options"
+        android:prompt="@string/sort_order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSortLabel" />
+
+    <TextView
+        android:id="@+id/tvNewsDesksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/news_desks"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSortOrder"
+        tools:ignore="RtlCompat"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox_art_leisure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/art_leisure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_arts" />
+
+    <CheckBox
+        android:id="@+id/checkbox_arts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/arts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewsDesksLabel" />
+
+
+    <TextView
+        android:id="@+id/tvBeforeDate"
+        android:layout_width="158dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/before_date"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFilterTitle" />
+
+    <EditText
+        android:id="@+id/etBeforeDate"
+        android:layout_width="159dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:longClickable="false"
+        app:layout_constraintStart_toEndOf="@+id/tvBeforeDate"
+        app:layout_constraintTop_toTopOf="@+id/tvBeforeDate" />
+
+    <CheckBox
+        android:id="@+id/cbAnyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvAnyTime"
+        app:layout_constraintTop_toTopOf="@+id/tvAnyTime" />
+
+    <TextView
+        android:id="@+id/tvAnyTime"
+        android:layout_width="158dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:text="Any Time"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBeforeDate" />
+
+</android.support.constraint.ConstraintLayout>
